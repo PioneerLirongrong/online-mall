@@ -1,0 +1,48 @@
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="stylesheet" href="../AmazeUI-2.4.2/assets/css/amazeui.min.css"/>
+    <link href="../css/dlstyle.css" rel="stylesheet" type="text/css">
+    <script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="../AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
+    <script src="../onlinemalljs/user/register.js"></script>
+    <script src="../js/jquery.md5.js"></script>
+    <script src="../js/jquery.base64.js"></script>
+    <script src="../onlinemalljs/commonUtils/CommonUtil.js"></script>
+</head>
+<body>
+<ul class="anserdh" id="topmenu">
+    <li><a href="">积分榜</a></li>
+    <li class="qhbg"><a href="">回答榜 </a></li>
+    <li><a href="">提问榜</a></li>
+    <li><a href="">满意榜</a></li>
+</ul>
+
+
+</pre><p></p><p><pre name="code" class="javascript"><script>function show(x){    var sw = document.getElementById(x).value;}</script>
+</pre><pre name="code" class="html"><div>
+<ul>
+<li id="li_1" onclick="show(this.id)"><a>aaaa</a></li>
+<li id="li_2" onclick="show(this.id)"><a>aaaa</a></li>
+</ul>
+</div>
+</body>
+<script>
+    $('.anserdh li a').click(function () {
+        alert("aaa")
+        $('.anserdh li').removeClass('qhbg');
+        $(this).parent().addClass('qhbg');
+        alert($('.anserdh li').val())
+        alert("aaa")
+    })
+</script>
+</html>
